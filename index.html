@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
     <title>Екатерина | Английский и испанский онлайн</title>
     <meta name="description" content="Онлайн-занятия по английскому и испанскому с Екатериной. Любой возраст и уровень. Индивидуальный подход, разговорная практика.">
     <style>
@@ -16,7 +16,7 @@
             font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
             background-color: #ffffff;
             color: #111827;
-            line-height: 1.4;
+            line-height: 1.5;
             scroll-behavior: smooth;
             overflow-x: hidden;
         }
@@ -24,28 +24,28 @@
         .container {
             max-width: 1280px;
             margin: 0 auto;
-            padding: 0 32px;
+            padding: 0 24px;
         }
 
         section {
-            padding: 100px 0;
+            padding: 80px 0;
         }
 
         .section-title {
-            font-size: 48px;
+            font-size: 36px;
             font-weight: 700;
             line-height: 1.2;
             letter-spacing: -0.02em;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             color: #0a0a0a;
         }
 
         .section-subtitle {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.5;
             color: #4b5563;
             max-width: 680px;
-            margin-bottom: 64px;
+            margin-bottom: 48px;
             font-weight: 400;
         }
 
@@ -53,29 +53,29 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
-            padding: 16px 36px;
+            gap: 10px;
+            padding: 14px 28px;
             border-radius: 60px;
             font-weight: 600;
             font-size: 16px;
-            transition: 0.3s ease;
+            transition: 0.25s ease;
             cursor: pointer;
             border: none;
             background: none;
             text-decoration: none;
             letter-spacing: -0.01em;
+            white-space: nowrap;
         }
 
         .btn-primary {
             background: #0f172a;
             color: white;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         .btn-primary:hover {
             background: #1e293b;
-            transform: translateY(-3px);
-            box-shadow: 0 20px 30px -12px rgba(15,23,42,0.25);
+            transform: translateY(-2px);
         }
 
         .btn-outline {
@@ -87,13 +87,13 @@
         .btn-outline:hover {
             border-color: #0f172a;
             background: #f8fafc;
-            transform: translateY(-2px);
         }
 
+        /* навигация (адаптивная) */
         .navbar {
-            padding: 24px 0;
+            padding: 16px 0;
             border-bottom: 1px solid #f0f2f5;
-            background: rgba(255,255,255,0.96);
+            background: rgba(255,255,255,0.98);
             backdrop-filter: blur(8px);
             position: sticky;
             top: 0;
@@ -105,11 +105,10 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 20px;
         }
 
         .logo {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 800;
             letter-spacing: -0.02em;
             text-decoration: none;
@@ -119,11 +118,28 @@
             color: transparent;
         }
 
+        /* бургер-меню для мобильных */
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .nav-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #0f172a;
+            margin: 5px 0;
+            transition: 0.2s;
+        }
+
         .nav-links {
             display: flex;
-            gap: 40px;
+            gap: 32px;
             align-items: center;
-            flex-wrap: wrap;
         }
 
         .nav-links a {
@@ -138,124 +154,117 @@
             color: #2563eb;
         }
 
+        /* hero */
         .hero {
-            padding: 40px 0 80px 0;
+            padding: 24px 0 56px 0;
         }
 
         .hero-grid {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 60px;
+            gap: 40px;
             justify-content: space-between;
         }
 
         .hero-content {
-            flex: 1.2;
+            flex: 1;
             min-width: 280px;
         }
 
         .hero-badge {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
             color: #2563eb;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             display: inline-block;
             background: #eef2ff;
-            padding: 6px 14px;
+            padding: 5px 12px;
             border-radius: 40px;
         }
 
         .hero-title {
-            font-size: 62px;
+            font-size: 42px;
             font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -0.03em;
-            margin-bottom: 28px;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
             color: #020617;
         }
 
         .hero-desc {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.5;
             color: #334155;
             max-width: 540px;
-            margin-bottom: 40px;
+            margin-bottom: 32px;
         }
 
         .btn-group {
             display: flex;
             flex-wrap: wrap;
-            gap: 18px;
+            gap: 14px;
         }
 
         .hero-image {
             flex: 1;
-            min-width: 280px;
+            min-width: 260px;
             background: linear-gradient(145deg, #eef2ff 0%, #e0e7ff 100%);
-            border-radius: 48px;
-            padding: 48px 32px;
+            border-radius: 40px;
+            padding: 32px 24px;
             text-align: center;
-            box-shadow: 0 30px 40px -20px rgba(0,0,0,0.12);
         }
 
         .hero-image svg {
-            width: 140px;
-            height: 140px;
+            width: 120px;
+            height: 120px;
             stroke: #1e3a8a;
             stroke-width: 1.2;
-            fill: none;
         }
 
+        /* карточки преимуществ */
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
             margin-top: 20px;
         }
 
         .feature-card {
             background: #ffffff;
-            border-radius: 40px;
-            padding: 40px 32px;
+            border-radius: 32px;
+            padding: 32px 24px;
             border: 1px solid #f1f5f9;
-            transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
-            box-shadow: 0 4px 14px rgba(0,0,0,0.02);
-        }
-
-        .feature-card:hover {
-            transform: translateY(-8px);
-            border-color: #e2e8f0;
-            box-shadow: 0 30px 40px -20px rgba(0,0,0,0.12);
+            transition: 0.2s;
         }
 
         .feature-icon svg {
-            width: 48px;
-            height: 48px;
+            width: 44px;
+            height: 44px;
             stroke: #2563eb;
-            stroke-width: 1.5;
-            fill: none;
-            margin-bottom: 28px;
+            stroke-width: 1.6;
+            margin-bottom: 24px;
         }
 
         .feature-card h3 {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 700;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
         }
 
         .feature-card p {
             color: #475569;
+            font-size: 15px;
             line-height: 1.5;
-            font-size: 16px;
         }
 
+        /* о преподавателе */
         .about-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 70px;
+            gap: 48px;
             align-items: center;
         }
 
@@ -264,36 +273,34 @@
         }
 
         .about-text h3 {
-            font-size: 36px;
+            font-size: 32px;
             font-weight: 700;
-            margin-bottom: 24px;
-            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+            letter-spacing: -0.01em;
         }
 
         .about-text p {
             color: #334155;
             line-height: 1.6;
-            margin-bottom: 28px;
-            font-size: 18px;
+            margin-bottom: 24px;
+            font-size: 16px;
         }
 
         .about-list {
             list-style: none;
-            margin-top: 24px;
         }
 
         .about-list li {
-            margin-bottom: 18px;
+            margin-bottom: 14px;
             display: flex;
             align-items: center;
-            gap: 14px;
-            font-size: 17px;
-            color: #1e293b;
+            gap: 12px;
+            font-size: 16px;
         }
 
         .about-list svg {
-            width: 22px;
-            height: 22px;
+            width: 20px;
+            height: 20px;
             stroke: #2563eb;
             stroke-width: 2;
             flex-shrink: 0;
@@ -302,223 +309,302 @@
         .about-photo {
             flex: 0.7;
             background: linear-gradient(135deg, #f1f5f9 0%, #e6edf7 100%);
-            border-radius: 48px;
-            padding: 56px 32px;
+            border-radius: 40px;
+            padding: 40px 24px;
             text-align: center;
-            min-width: 260px;
+            min-width: 220px;
         }
 
         .about-photo svg {
-            width: 140px;
-            height: 140px;
+            width: 120px;
+            height: 120px;
             stroke: #334155;
-            stroke-width: 1;
-            fill: none;
         }
 
+        /* онлайн-формат (2 карточки) */
         .online-features {
             background: #fefefc;
         }
 
         .online-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 32px;
         }
 
         .online-card {
             background: #ffffff;
-            border-radius: 36px;
-            padding: 44px 32px;
+            border-radius: 32px;
+            padding: 36px 24px;
             text-align: center;
             border: 1px solid #edf2f7;
-            transition: 0.25s;
         }
 
         .online-card svg {
-            width: 56px;
-            height: 56px;
+            width: 52px;
+            height: 52px;
             stroke: #2563eb;
             stroke-width: 1.5;
-            fill: none;
-            margin-bottom: 28px;
+            margin-bottom: 24px;
         }
 
         .online-card h4 {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 700;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
 
-        .online-card p {
-            color: #4b5563;
-            line-height: 1.5;
-        }
-
-        .reviews-section {
-            background: #ffffff;
-        }
-
+        /* отзывы */
         .reviews-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 32px;
-            margin-bottom: 64px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 28px;
+            margin-bottom: 56px;
         }
 
         .review-card {
             background: #f9fafb;
-            border-radius: 32px;
-            padding: 32px;
-            transition: 0.2s;
+            border-radius: 28px;
+            padding: 28px;
             border: 1px solid #f1f5f9;
         }
 
         .review-author {
             font-weight: 700;
             font-size: 18px;
-            color: #0f172a;
-            margin-bottom: 14px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            margin-bottom: 12px;
         }
 
         .review-text {
             color: #334155;
             line-height: 1.5;
-            font-size: 16px;
+            font-size: 15px;
         }
 
         .review-date {
-            font-size: 12px;
+            font-size: 11px;
             color: #94a3b8;
-            margin-top: 18px;
+            margin-top: 14px;
         }
 
         .add-review-form {
             background: #f8fafc;
-            border-radius: 48px;
-            padding: 56px;
-            margin-top: 40px;
+            border-radius: 40px;
+            padding: 40px 28px;
+            margin-top: 32px;
         }
 
         .form-title {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 700;
-            margin-bottom: 32px;
-            color: #0f172a;
+            margin-bottom: 28px;
         }
 
         .review-input-group {
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         .review-input-group input,
         .review-input-group textarea {
             width: 100%;
-            padding: 16px 24px;
+            padding: 14px 20px;
             border-radius: 60px;
             border: 1px solid #cbd5e1;
             font-family: inherit;
             font-size: 16px;
             background: white;
-            transition: 0.2s;
         }
 
         .review-input-group textarea {
-            border-radius: 32px;
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .review-input-group input:focus,
-        .review-input-group textarea:focus {
-            outline: none;
-            border-color: #2563eb;
-            box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+            border-radius: 28px;
+            min-height: 110px;
         }
 
         .btn-submit {
             background: #0f172a;
             color: white;
-            padding: 14px 32px;
+            padding: 12px 28px;
             border-radius: 60px;
             font-weight: 600;
             border: none;
             cursor: pointer;
-            transition: 0.2s;
             font-size: 16px;
-        }
-
-        .btn-submit:hover {
-            background: #1e293b;
-            transform: translateY(-2px);
         }
 
         footer {
             background: #ffffff;
             border-top: 1px solid #eef2ff;
-            padding: 72px 0 48px;
+            padding: 56px 0 40px;
         }
 
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 48px;
-            margin-bottom: 56px;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 40px;
+            margin-bottom: 48px;
         }
 
         .footer-col h4 {
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 700;
-            margin-bottom: 24px;
-            color: #0f172a;
+            margin-bottom: 20px;
         }
 
         .footer-col a, .footer-col p {
             color: #4b5563;
             text-decoration: none;
             display: block;
-            margin-bottom: 12px;
-            font-size: 15px;
-            transition: color 0.2s;
-        }
-
-        .footer-col a:hover {
-            color: #2563eb;
+            margin-bottom: 10px;
+            font-size: 14px;
         }
 
         .copyright {
             text-align: center;
-            padding-top: 32px;
+            padding-top: 28px;
             border-top: 1px solid #f1f5f9;
-            color: #5b6e8c;
-            font-size: 14px;
+            font-size: 13px;
+            color: #6c757d;
         }
 
-        @media (max-width: 900px) {
-            .container { padding: 0 28px; }
-            section { padding: 72px 0; }
-            .hero-title { font-size: 48px; }
-            .section-title { font-size: 36px; }
-            .add-review-form { padding: 32px; }
+        /* ===== АДАПТАЦИЯ ПОД ТЕЛЕФОНЫ ===== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            section {
+                padding: 60px 0;
+            }
+            .section-title {
+                font-size: 32px;
+            }
+            .hero-title {
+                font-size: 36px;
+            }
+            .hero-badge {
+                font-size: 12px;
+            }
+            .btn {
+                padding: 12px 22px;
+                font-size: 15px;
+                white-space: normal;
+                text-align: center;
+            }
+            .btn-group {
+                flex-direction: column;
+                width: 100%;
+            }
+            .btn-group .btn {
+                width: 100%;
+            }
+
+            /* бургер-меню */
+            .nav-toggle {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: 16px;
+                padding: 20px 0 10px;
+                background: white;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-links a {
+                font-size: 18px;
+                padding: 8px 0;
+                width: 100%;
+                text-align: center;
+            }
+            .nav-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            /* hero блок столбиком */
+            .hero-grid {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-content {
+                text-align: center;
+            }
+            .hero-desc {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-image {
+                order: -1;
+                margin-bottom: 10px;
+            }
+            /* карточки преимуществ */
+            .features-grid {
+                gap: 24px;
+            }
+            .feature-card {
+                padding: 28px 20px;
+            }
+            /* about */
+            .about-grid {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-list li {
+                justify-content: center;
+            }
+            .about-photo {
+                order: -1;
+                width: 100%;
+            }
+            /* онлайн-формат */
+            .online-grid {
+                gap: 24px;
+            }
+            /* отзывы */
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+            .add-review-form {
+                padding: 30px 20px;
+            }
+            .form-title {
+                font-size: 22px;
+                text-align: center;
+            }
+            .btn-submit {
+                width: 100%;
+            }
+            /* футер */
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 32px;
+            }
+            .footer-col h4 {
+                margin-bottom: 16px;
+            }
         }
 
-        @media (max-width: 640px) {
-            .nav-links { gap: 24px; width: 100%; justify-content: center; }
-            .nav-container { flex-direction: column; align-items: flex-start; }
-            .btn-group { width: 100%; }
-            .btn { flex: 1; text-align: center; }
-            .hero-title { font-size: 40px; }
+        /* планшеты */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                padding: 0 32px;
+            }
+            .hero-title {
+                font-size: 48px;
+            }
+            .hero-grid {
+                gap: 40px;
+            }
         }
 
+        /* анимация появления */
         .fade-up {
             opacity: 0;
-            transform: translateY(25px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
         }
-
         .fade-up.appear {
             opacity: 1;
             transform: translateY(0);
@@ -530,7 +616,10 @@
 <header class="navbar">
     <div class="container nav-container">
         <a href="#" class="logo">EKATERINA LINGUA</a>
-        <div class="nav-links">
+        <button class="nav-toggle" id="navToggle" aria-label="Меню">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
             <a href="#about">О преподавателе</a>
             <a href="#online">Онлайн-формат</a>
             <a href="#reviews">Отзывы</a>
@@ -551,11 +640,10 @@
                 </div>
             </div>
             <div class="hero-image fade-up">
-                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 100 100" fill="none">
                     <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="1.5" fill="#e0e7ff" stroke="#1e3a8a"/>
                     <path d="M35 45 L45 55 L65 35" stroke="#1e3a8a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
                     <path d="M30 70 L70 70" stroke="#1e3a8a" stroke-width="1.8" stroke-linecap="round"/>
-                    <circle cx="50" cy="45" r="6" fill="#1e3a8a" fill-opacity="0.15" stroke="#1e3a8a" stroke-width="1.5"/>
                 </svg>
             </div>
         </div>
@@ -564,19 +652,19 @@
     <div class="container">
         <div class="features-grid">
             <div class="feature-card fade-up">
-                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.8"/></svg></div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4" stroke="currentColor"/></svg></div>
                 <h3>Любой возраст</h3>
-                <p>Дети, школьники, взрослые — программа адаптируется под ваши задачи и интересы.</p>
+                <p>Дети, школьники, взрослые — программа под ваши задачи и интересы.</p>
             </div>
             <div class="feature-card fade-up">
-                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.8"/></svg></div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor"/></svg></div>
                 <h3>Любой уровень</h3>
-                <p>С нуля, продолжающий, продвинутый — помогу достичь вашей цели: от A1 до C1.</p>
+                <p>С нуля, продолжающий, продвинутый — от A1 до C1.</p>
             </div>
             <div class="feature-card fade-up">
-                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.66 0 3-4 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4-3-9s1.34-9 3-9" stroke="currentColor" stroke-width="1.8"/></svg></div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9" stroke="currentColor"/></svg></div>
                 <h3>Онлайн по всему миру</h3>
-                <p>Занимайтесь из любой точки. Удобная платформа, индивидуальный подход.</p>
+                <p>Занимайтесь из любой точки. Удобная платформа.</p>
             </div>
         </div>
     </div>
@@ -585,22 +673,21 @@
         <div class="container about-grid">
             <div class="about-text fade-up">
                 <h3>Екатерина</h3>
-                <p>Дипломированный лингвист-преподаватель (МГЛУ), стажировка в университете Саламанки. Специализируюсь на английском и испанском, помогаю ученикам любого возраста заговорить уверенно.</p>
+                <p>Дипломированный лингвист-преподаватель (МГЛУ), стажировка в университете Саламанки. Помогаю ученикам любого возраста заговорить уверенно.</p>
                 <ul class="about-list">
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"/></svg> Подготовка к DELE, IELTS, ОГЭ/ЕГЭ</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"/></svg> Разговорный клуб, бизнес-английский</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"/></svg> Современные методики, интерактивные материалы</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"/></svg> Более 130 довольных студентов</li>
+                    <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Подготовка к DELE, IELTS, ОГЭ/ЕГЭ</li>
+                    <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Разговорный клуб, бизнес-английский</li>
+                    <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Современные методики, интерактивные материалы</li>
+                    <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Более 130 довольных студентов</li>
                 </ul>
             </div>
             <div class="about-photo fade-up">
                 <svg viewBox="0 0 100 100" fill="none">
                     <circle cx="50" cy="40" r="20" stroke="#334155" stroke-width="1.5" fill="#e2e8f0"/>
                     <path d="M28 70 Q50 88 72 70" stroke="#334155" stroke-width="1.8" fill="none"/>
-                    <path d="M18 82 L82 82" stroke="#334155" stroke-width="1.2"/>
                 </svg>
-                <p style="margin-top: 24px; font-weight: 600; font-size: 20px;">Екатерина</p>
-                <p style="font-size: 15px; color: #4b5563;">Преподаватель, лингвист</p>
+                <p style="margin-top: 20px; font-weight: 600; font-size: 18px;">Екатерина</p>
+                <p style="font-size: 14px; color: #4b5563;">Преподаватель, лингвист</p>
             </div>
         </div>
     </section>
@@ -613,12 +700,12 @@
                 <div class="online-card fade-up">
                     <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor"/><path d="M8 12h8" stroke="currentColor"/></svg>
                     <h4>Любая платформа</h4>
-                    <p>Zoom, Skype, Telegram. Выбирайте удобный сервис для занятий.</p>
+                    <p>Zoom, Skype, Telegram. Выбирайте удобный сервис.</p>
                 </div>
                 <div class="online-card fade-up">
                     <svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14" stroke="currentColor"/></svg>
                     <h4>Запись уроков</h4>
-                    <p>Все занятия сохраняются для повторения материала.</p>
+                    <p>Все занятия сохраняются для повторения.</p>
                 </div>
             </div>
         </div>
@@ -628,11 +715,9 @@
         <div class="container">
             <h2 class="section-title fade-up">Отзывы учеников</h2>
             <p class="section-subtitle fade-up">Реальные впечатления тех, кто уже занимается онлайн.</p>
-            
             <div id="reviews-list" class="reviews-grid">
-                <div style="grid-column:1/-1; text-align:center; padding:40px; color:#94a3b8;">Пока нет отзывов. Оставьте первый!</div>
+                <div style="grid-column:1/-1; text-align:center; padding:30px; color:#94a3b8;">Пока нет отзывов. Оставьте первый!</div>
             </div>
-
             <div class="add-review-form fade-up">
                 <div class="form-title">Расскажите о вашем опыте</div>
                 <div class="review-input-group">
@@ -642,7 +727,7 @@
                     <textarea id="review-text" placeholder="Поделитесь впечатлениями о занятиях..." rows="3" maxlength="500"></textarea>
                 </div>
                 <button class="btn-submit" id="submit-review">Оставить отзыв</button>
-                <p style="font-size: 13px; color: #64748b; margin-top: 20px;">Ваш отзыв будет опубликован сразу. Спасибо за обратную связь!</p>
+                <p style="font-size: 12px; color: #64748b; margin-top: 16px;">Ваш отзыв будет опубликован сразу. Спасибо!</p>
             </div>
         </div>
     </section>
@@ -677,53 +762,44 @@
 
 <script>
     (function() {
-        const links = document.querySelectorAll('a[href^="#"]');
-        links.forEach(link => {
-            link.addEventListener('click', function(e) {
+        // бургер-меню
+        const toggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        if (toggle && navLinks) {
+            toggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+            // закрываем при клике на ссылку
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        }
+
+        // плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
                 const targetId = this.getAttribute('href');
                 if (targetId === "#" || targetId === "") return;
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
+                const target = document.querySelector(targetId);
+                if (target) {
                     e.preventDefault();
-                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
 
+        // отзывы (localStorage)
         let reviews = [];
-
         function loadReviews() {
             const stored = localStorage.getItem('ekaterina_reviews');
             if (stored) {
-                try {
-                    reviews = JSON.parse(stored);
-                } catch(e) { reviews = []; }
+                try { reviews = JSON.parse(stored); } catch(e) { reviews = []; }
             }
             renderReviews();
         }
-
-        function saveReviews() {
-            localStorage.setItem('ekaterina_reviews', JSON.stringify(reviews));
-        }
-
-        function renderReviews() {
-            const container = document.getElementById('reviews-list');
-            if (!container) return;
-            if (reviews.length === 0) {
-                container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#94a3b8;">Пока нет отзывов. Оставьте первый!</div>';
-                return;
-            }
-            container.innerHTML = reviews.map(review => `
-                <div class="review-card">
-                    <div class="review-author">
-                        <span>${escapeHtml(review.name)}</span>
-                    </div>
-                    <div class="review-text">${escapeHtml(review.text)}</div>
-                    <div class="review-date">${review.date || ''}</div>
-                </div>
-            `).join('');
-        }
-
+        function saveReviews() { localStorage.setItem('ekaterina_reviews', JSON.stringify(reviews)); }
         function escapeHtml(str) {
             if (!str) return '';
             return str.replace(/[&<>]/g, function(m) {
@@ -733,67 +809,47 @@
                 return m;
             });
         }
-
-        function addReview(name, text) {
-            if (!name.trim() || !text.trim()) {
-                alert('Пожалуйста, заполните имя и текст отзыва.');
-                return false;
+        function renderReviews() {
+            const container = document.getElementById('reviews-list');
+            if (!container) return;
+            if (reviews.length === 0) {
+                container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:30px; color:#94a3b8;">Пока нет отзывов. Оставьте первый!</div>';
+                return;
             }
-            if (name.length > 50) name = name.slice(0,50);
-            if (text.length > 500) text = text.slice(0,500);
+            container.innerHTML = reviews.map(r => `
+                <div class="review-card">
+                    <div class="review-author">${escapeHtml(r.name)}</div>
+                    <div class="review-text">${escapeHtml(r.text)}</div>
+                    <div class="review-date">${r.date || ''}</div>
+                </div>
+            `).join('');
+        }
+        function addReview(name, text) {
+            if (!name.trim() || !text.trim()) { alert('Заполните имя и отзыв.'); return false; }
             const today = new Date().toISOString().slice(0,10);
             reviews.unshift({ name: name.trim(), text: text.trim(), date: today });
+            if (reviews.length > 30) reviews.pop();
             saveReviews();
             renderReviews();
             return true;
         }
-
-        const submitBtn = document.getElementById('submit-review');
-        if (submitBtn) {
-            submitBtn.addEventListener('click', function() {
-                const nameInput = document.getElementById('review-name');
-                const textInput = document.getElementById('review-text');
-                if (addReview(nameInput.value, textInput.value)) {
-                    nameInput.value = '';
-                    textInput.value = '';
-                    alert('Спасибо за отзыв!');
-                }
-            });
-        }
-
+        document.getElementById('submit-review')?.addEventListener('click', () => {
+            const name = document.getElementById('review-name').value;
+            const text = document.getElementById('review-text').value;
+            if (addReview(name, text)) {
+                document.getElementById('review-name').value = '';
+                document.getElementById('review-text').value = '';
+                alert('Спасибо за отзыв!');
+            }
+        });
         loadReviews();
 
-        const fadeElements = document.querySelectorAll('.fade-up');
+        // анимация при скролле
+        const faders = document.querySelectorAll('.fade-up');
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('appear');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -20px 0px' });
-        fadeElements.forEach(el => observer.observe(el));
-
-        const sections = document.querySelectorAll('section, .hero');
-        const navItems = document.querySelectorAll('.nav-links a');
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const scrollPos = window.scrollY + 200;
-            sections.forEach(section => {
-                if (section.id && scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
-                    current = section.id;
-                }
-            });
-            navItems.forEach(link => {
-                link.style.fontWeight = '500';
-                link.style.color = '#1e293b';
-                const href = link.getAttribute('href');
-                if (href && href.substring(1) === current) {
-                    link.style.fontWeight = '700';
-                    link.style.color = '#2563eb';
-                }
-            });
-        });
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('appear'); observer.unobserve(e.target); } });
+        }, { threshold: 0.1 });
+        faders.forEach(el => observer.observe(el));
     })();
 </script>
 </body>
