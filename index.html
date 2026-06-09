@@ -3,12 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Lingua Mentor | Репетитор английского и испанского языков</title>
-    <meta name="description" content="Индивидуальные занятия по английскому и испанскому с опытным преподавателем. Онлайн и офлайн. Подготовка к экзаменам, разговорная практика.">
-    <!-- Google Fonts: Inter + чистый гротеск -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 (иконки, без эмодзи) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Екатерина | Английский и испанский онлайн</title>
+    <meta name="description" content="Онлайн-занятия по английскому и испанскому с Екатериной. Любой возраст и уровень. Индивидуальный подход, разговорная практика.">
     <style>
         * {
             margin: 0;
@@ -17,7 +13,7 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
             background-color: #ffffff;
             color: #111827;
             line-height: 1.4;
@@ -32,15 +28,15 @@
         }
 
         section {
-            padding: 88px 0;
+            padding: 100px 0;
         }
 
         .section-title {
-            font-size: 44px;
+            font-size: 48px;
             font-weight: 700;
             line-height: 1.2;
             letter-spacing: -0.02em;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             color: #0a0a0a;
         }
 
@@ -49,7 +45,7 @@
             line-height: 1.5;
             color: #4b5563;
             max-width: 680px;
-            margin-bottom: 56px;
+            margin-bottom: 64px;
             font-weight: 400;
         }
 
@@ -57,12 +53,12 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            padding: 14px 32px;
-            border-radius: 48px;
+            gap: 12px;
+            padding: 16px 36px;
+            border-radius: 60px;
             font-weight: 600;
             font-size: 16px;
-            transition: 0.25s ease;
+            transition: 0.3s ease;
             cursor: pointer;
             border: none;
             background: none;
@@ -73,13 +69,13 @@
         .btn-primary {
             background: #0f172a;
             color: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
 
         .btn-primary:hover {
-            background: #2d3a5e;
+            background: #1e293b;
             transform: translateY(-3px);
-            box-shadow: 0 12px 24px -12px rgba(15,23,42,0.3);
+            box-shadow: 0 20px 30px -12px rgba(15,23,42,0.25);
         }
 
         .btn-outline {
@@ -91,17 +87,17 @@
         .btn-outline:hover {
             border-color: #0f172a;
             background: #f8fafc;
+            transform: translateY(-2px);
         }
 
         .navbar {
-            padding: 20px 0;
+            padding: 24px 0;
             border-bottom: 1px solid #f0f2f5;
-            background: #ffffff;
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(8px);
             position: sticky;
             top: 0;
             z-index: 100;
-            background-color: rgba(255,255,255,0.96);
-            backdrop-filter: blur(0px);
         }
 
         .nav-container {
@@ -113,16 +109,19 @@
         }
 
         .logo {
-            font-size: 26px;
+            font-size: 28px;
             font-weight: 800;
             letter-spacing: -0.02em;
-            color: #0f172a;
             text-decoration: none;
+            background: linear-gradient(135deg, #0f172a 0%, #2563eb 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
         }
 
         .nav-links {
             display: flex;
-            gap: 36px;
+            gap: 40px;
             align-items: center;
             flex-wrap: wrap;
         }
@@ -139,16 +138,15 @@
             color: #2563eb;
         }
 
-        /* hero */
         .hero {
-            padding: 32px 0 64px 0;
+            padding: 40px 0 80px 0;
         }
 
         .hero-grid {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 48px;
+            gap: 60px;
             justify-content: space-between;
         }
 
@@ -161,18 +159,21 @@
             font-size: 14px;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             color: #2563eb;
             margin-bottom: 20px;
             display: inline-block;
+            background: #eef2ff;
+            padding: 6px 14px;
+            border-radius: 40px;
         }
 
         .hero-title {
-            font-size: 58px;
+            font-size: 62px;
             font-weight: 800;
             line-height: 1.1;
             letter-spacing: -0.03em;
-            margin-bottom: 24px;
+            margin-bottom: 28px;
             color: #020617;
         }
 
@@ -181,88 +182,80 @@
             line-height: 1.5;
             color: #334155;
             max-width: 540px;
-            margin-bottom: 36px;
+            margin-bottom: 40px;
         }
 
         .btn-group {
             display: flex;
             flex-wrap: wrap;
-            gap: 16px;
+            gap: 18px;
         }
 
         .hero-image {
             flex: 1;
             min-width: 280px;
-            background: linear-gradient(145deg, #eef2ff 0%, #e0eaff 100%);
-            border-radius: 40px;
-            padding: 40px 32px;
+            background: linear-gradient(145deg, #eef2ff 0%, #e0e7ff 100%);
+            border-radius: 48px;
+            padding: 48px 32px;
             text-align: center;
-            box-shadow: 0 25px 35px -18px rgba(0,0,0,0.08);
+            box-shadow: 0 30px 40px -20px rgba(0,0,0,0.12);
         }
 
-        .hero-image i {
-            font-size: 110px;
-            color: #1e3a8a;
-            opacity: 0.9;
+        .hero-image svg {
+            width: 140px;
+            height: 140px;
+            stroke: #1e3a8a;
+            stroke-width: 1.2;
+            fill: none;
         }
 
-        .lang-tag {
-            display: inline-block;
-            background: white;
-            border-radius: 100px;
-            padding: 6px 16px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-top: 20px;
-            color: #0f172a;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-        }
-
-        /* преимущества */
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 40px;
-            margin-top: 24px;
+            margin-top: 20px;
         }
 
         .feature-card {
             background: #ffffff;
-            border-radius: 32px;
-            padding: 32px;
+            border-radius: 40px;
+            padding: 40px 32px;
             border: 1px solid #f1f5f9;
-            transition: all 0.3s;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.02);
+            transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.02);
         }
 
         .feature-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
             border-color: #e2e8f0;
-            box-shadow: 0 24px 40px -18px rgba(0,0,0,0.1);
+            box-shadow: 0 30px 40px -20px rgba(0,0,0,0.12);
         }
 
-        .feature-icon {
-            font-size: 40px;
-            color: #2563eb;
-            margin-bottom: 24px;
+        .feature-icon svg {
+            width: 48px;
+            height: 48px;
+            stroke: #2563eb;
+            stroke-width: 1.5;
+            fill: none;
+            margin-bottom: 28px;
         }
 
         .feature-card h3 {
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
         }
 
         .feature-card p {
             color: #475569;
             line-height: 1.5;
+            font-size: 16px;
         }
 
-        /* о преподавателе */
         .about-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 56px;
+            gap: 70px;
             align-items: center;
         }
 
@@ -271,213 +264,202 @@
         }
 
         .about-text h3 {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
         }
 
         .about-text p {
             color: #334155;
             line-height: 1.6;
-            margin-bottom: 24px;
-            font-size: 17px;
+            margin-bottom: 28px;
+            font-size: 18px;
         }
 
         .about-list {
             list-style: none;
-            margin-top: 20px;
+            margin-top: 24px;
         }
 
         .about-list li {
-            margin-bottom: 14px;
+            margin-bottom: 18px;
             display: flex;
             align-items: center;
-            gap: 12px;
-            font-size: 16px;
+            gap: 14px;
+            font-size: 17px;
             color: #1e293b;
         }
 
-        .about-list i {
-            color: #2563eb;
-            width: 24px;
-            font-size: 18px;
+        .about-list svg {
+            width: 22px;
+            height: 22px;
+            stroke: #2563eb;
+            stroke-width: 2;
+            flex-shrink: 0;
         }
 
         .about-photo {
-            flex: 0.8;
-            background: #f1f5f9;
-            border-radius: 32px;
-            padding: 48px 32px;
+            flex: 0.7;
+            background: linear-gradient(135deg, #f1f5f9 0%, #e6edf7 100%);
+            border-radius: 48px;
+            padding: 56px 32px;
             text-align: center;
-            min-width: 240px;
+            min-width: 260px;
         }
 
-        .about-photo i {
-            font-size: 120px;
-            color: #334155;
+        .about-photo svg {
+            width: 140px;
+            height: 140px;
+            stroke: #334155;
+            stroke-width: 1;
+            fill: none;
         }
 
-        /* форматы занятий */
-        .formats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 32px;
+        .online-features {
+            background: #fefefc;
         }
 
-        .format-card {
-            background: #f9fafb;
-            border-radius: 28px;
-            padding: 32px;
-            text-align: center;
-        }
-
-        .format-card i {
-            font-size: 48px;
-            color: #2563eb;
-            margin-bottom: 20px;
-        }
-
-        .format-card h4 {
-            font-size: 22px;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-
-        /* цены / тарифы */
-        .pricing-grid {
+        .online-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 32px;
+            gap: 40px;
         }
 
-        .pricing-item {
+        .online-card {
             background: #ffffff;
-            border-radius: 32px;
-            padding: 40px 28px;
+            border-radius: 36px;
+            padding: 44px 32px;
+            text-align: center;
             border: 1px solid #edf2f7;
             transition: 0.25s;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
         }
 
-        .pricing-item:hover {
-            border-color: #cbd5e1;
-            box-shadow: 0 20px 30px -16px rgba(0,0,0,0.08);
+        .online-card svg {
+            width: 56px;
+            height: 56px;
+            stroke: #2563eb;
+            stroke-width: 1.5;
+            fill: none;
+            margin-bottom: 28px;
         }
 
-        .price {
-            font-size: 44px;
-            font-weight: 800;
-            color: #0f172a;
-            margin: 20px 0 12px;
+        .online-card h4 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
         }
 
-        .price small {
+        .online-card p {
+            color: #4b5563;
+            line-height: 1.5;
+        }
+
+        .reviews-section {
+            background: #ffffff;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 32px;
+            margin-bottom: 64px;
+        }
+
+        .review-card {
+            background: #f9fafb;
+            border-radius: 32px;
+            padding: 32px;
+            transition: 0.2s;
+            border: 1px solid #f1f5f9;
+        }
+
+        .review-author {
+            font-weight: 700;
             font-size: 18px;
-            font-weight: 500;
-        }
-
-        .pricing-item ul {
-            list-style: none;
-            margin: 28px 0;
-        }
-
-        .pricing-item li {
-            margin: 12px 0;
+            color: #0f172a;
+            margin-bottom: 14px;
             display: flex;
             align-items: center;
             gap: 10px;
         }
 
-        .btn-small {
-            width: 100%;
-            padding: 12px;
-            border-radius: 40px;
-            background: #f1f5f9;
-            color: #0f172a;
-            font-weight: 600;
-            text-align: center;
-            display: inline-block;
-            text-decoration: none;
+        .review-text {
+            color: #334155;
+            line-height: 1.5;
+            font-size: 16px;
         }
 
-        .btn-small:hover {
-            background: #e2e8f0;
+        .review-date {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 18px;
         }
 
-        /* cta форма */
-        .cta-section {
-            background: #0f172a;
+        .add-review-form {
+            background: #f8fafc;
             border-radius: 48px;
-            padding: 70px 56px;
-            color: white;
-            margin: 24px 0 0;
+            padding: 56px;
+            margin-top: 40px;
         }
 
-        .cta-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 48px;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .cta-text {
-            flex: 1;
-        }
-
-        .cta-text h2 {
-            font-size: 38px;
+        .form-title {
+            font-size: 28px;
             font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 18px;
+            margin-bottom: 32px;
+            color: #0f172a;
         }
 
-        .cta-text p {
-            color: #cbd5e1;
-            font-size: 18px;
+        .review-input-group {
+            margin-bottom: 24px;
         }
 
-        .cta-form {
-            flex: 1;
-            min-width: 280px;
-        }
-
-        .form-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-
-        .cta-form input, .cta-form select {
-            flex: 2;
-            padding: 16px 20px;
+        .review-input-group input,
+        .review-input-group textarea {
+            width: 100%;
+            padding: 16px 24px;
             border-radius: 60px;
-            border: none;
+            border: 1px solid #cbd5e1;
+            font-family: inherit;
             font-size: 16px;
             background: white;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .cta-form button {
-            flex: 1;
-            background: #ffffff;
-            color: #0f172a;
-            border: none;
-            padding: 0 24px;
-            border-radius: 60px;
-            font-weight: 700;
-            cursor: pointer;
             transition: 0.2s;
         }
 
-        .cta-form button:hover {
-            background: #e2e8f0;
+        .review-input-group textarea {
+            border-radius: 32px;
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .review-input-group input:focus,
+        .review-input-group textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+        }
+
+        .btn-submit {
+            background: #0f172a;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 60px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 16px;
+        }
+
+        .btn-submit:hover {
+            background: #1e293b;
+            transform: translateY(-2px);
         }
 
         footer {
             background: #ffffff;
             border-top: 1px solid #eef2ff;
-            padding: 64px 0 48px;
+            padding: 72px 0 48px;
         }
 
         .footer-grid {
@@ -491,6 +473,7 @@
             font-size: 18px;
             font-weight: 700;
             margin-bottom: 24px;
+            color: #0f172a;
         }
 
         .footer-col a, .footer-col p {
@@ -499,6 +482,11 @@
             display: block;
             margin-bottom: 12px;
             font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: #2563eb;
         }
 
         .copyright {
@@ -510,46 +498,30 @@
         }
 
         @media (max-width: 900px) {
-            .container {
-                padding: 0 24px;
-            }
-            section {
-                padding: 64px 0;
-            }
-            .hero-title {
-                font-size: 44px;
-            }
-            .section-title {
-                font-size: 36px;
-            }
-            .cta-section {
-                padding: 48px 32px;
-            }
+            .container { padding: 0 28px; }
+            section { padding: 72px 0; }
+            .hero-title { font-size: 48px; }
+            .section-title { font-size: 36px; }
+            .add-review-form { padding: 32px; }
         }
 
         @media (max-width: 640px) {
-            .nav-links {
-                gap: 20px;
-                width: 100%;
-                justify-content: center;
-            }
-            .nav-container {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .btn-group {
-                width: 100%;
-            }
-            .btn {
-                flex: 1;
-                text-align: center;
-            }
-            .form-group {
-                flex-direction: column;
-            }
-            .cta-form button {
-                padding: 14px;
-            }
+            .nav-links { gap: 24px; width: 100%; justify-content: center; }
+            .nav-container { flex-direction: column; align-items: flex-start; }
+            .btn-group { width: 100%; }
+            .btn { flex: 1; text-align: center; }
+            .hero-title { font-size: 40px; }
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-up.appear {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -557,217 +529,154 @@
 
 <header class="navbar">
     <div class="container nav-container">
-        <a href="#" class="logo">LINGUA MENTOR</a>
+        <a href="#" class="logo">EKATERINA LINGUA</a>
         <div class="nav-links">
             <a href="#about">О преподавателе</a>
-            <a href="#formats">Форматы</a>
-            <a href="#pricing">Стоимость</a>
-            <a href="#contact" class="btn-outline" style="padding: 8px 20px; border-radius: 40px;">Запись</a>
+            <a href="#online">Онлайн-формат</a>
+            <a href="#reviews">Отзывы</a>
         </div>
     </div>
 </header>
 
 <main>
-    <!-- Hero блок -->
     <section class="hero">
         <div class="container hero-grid">
-            <div class="hero-content">
-                <span class="hero-badge">Индивидуальные занятия</span>
-                <h1 class="hero-title">Английский и испанский с репетитором-профессионалом</h1>
-                <p class="hero-desc">Преодолеем языковой барьер, подготовим к экзаменам и свободному общению. Онлайн или офлайн — удобный формат для вас.</p>
+            <div class="hero-content fade-up">
+                <span class="hero-badge">Онлайн-занятия</span>
+                <h1 class="hero-title">Английский и испанский с репетитором</h1>
+                <p class="hero-desc">Индивидуальные уроки онлайн. Любой возраст и уровень подготовки. Заговорите свободно с комфортом.</p>
                 <div class="btn-group">
-                    <a href="#contact-form-block" class="btn btn-primary">Записаться на пробный урок <i class="fas fa-arrow-right"></i></a>
-                    <a href="#pricing" class="btn btn-outline">Узнать стоимость</a>
-                </div>
-                <div class="lang-tag">
-                    <i class="fas fa-language"></i> English · Español
+                    <a href="#reviews" class="btn btn-primary">Оставить отзыв</a>
+                    <a href="#online" class="btn btn-outline">Узнать о формате</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <i class="fas fa-chalkboard-user"></i>
-                <i class="fas fa-comment-dots" style="margin-left: 20px; font-size: 80px;"></i>
+            <div class="hero-image fade-up">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="1.5" fill="#e0e7ff" stroke="#1e3a8a"/>
+                    <path d="M35 45 L45 55 L65 35" stroke="#1e3a8a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <path d="M30 70 L70 70" stroke="#1e3a8a" stroke-width="1.8" stroke-linecap="round"/>
+                    <circle cx="50" cy="45" r="6" fill="#1e3a8a" fill-opacity="0.15" stroke="#1e3a8a" stroke-width="1.5"/>
+                </svg>
             </div>
         </div>
     </section>
 
-    <!-- Преимущества -->
-    <div class="container" id="about">
+    <div class="container">
         <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-graduation-cap"></i></div>
-                <h3>Опыт 9+ лет</h3>
-                <p>Преподавание взрослым и детям, международные сертификаты (DELE, IELTS).</p>
+            <div class="feature-card fade-up">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.8"/></svg></div>
+                <h3>Любой возраст</h3>
+                <p>Дети, школьники, взрослые — программа адаптируется под ваши задачи и интересы.</p>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-user-group"></i></div>
-                <h3>Индивидуальный подход</h3>
-                <p>Программа под ваш уровень, цели и график. Регулярный мониторинг прогресса.</p>
+            <div class="feature-card fade-up">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.8"/></svg></div>
+                <h3>Любой уровень</h3>
+                <p>С нуля, продолжающий, продвинутый — помогу достичь вашей цели: от A1 до C1.</p>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-globe"></i></div>
-                <h3>Разговорная практика</h3>
-                <p>60% времени — живое общение, актуальные темы и погружение в культуру.</p>
+            <div class="feature-card fade-up">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.66 0 3-4 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4-3-9s1.34-9 3-9" stroke="currentColor" stroke-width="1.8"/></svg></div>
+                <h3>Онлайн по всему миру</h3>
+                <p>Занимайтесь из любой точки. Удобная платформа, индивидуальный подход.</p>
             </div>
         </div>
     </div>
 
-    <!-- О преподавателе детально -->
-    <section>
+    <section id="about">
         <div class="container about-grid">
-            <div class="about-text">
-                <h3>Мария Гарсия</h3>
-                <p>Дипломированный лингвист-преподаватель, выпускница МГЛУ и стажировка в университете Саламанки. Специализируюсь на английском и испанском, помогаю ученикам любого возраста заговорить уверенно.</p>
+            <div class="about-text fade-up">
+                <h3>Екатерина</h3>
+                <p>Дипломированный лингвист-преподаватель (МГЛУ), стажировка в университете Саламанки. Специализируюсь на английском и испанском, помогаю ученикам любого возраста заговорить уверенно.</p>
                 <ul class="about-list">
-                    <li><i class="fas fa-check-circle"></i> Подготовка к DELE, IELTS, ОГЭ/ЕГЭ</li>
-                    <li><i class="fas fa-check-circle"></i> Разговорный клуб и деловой английский</li>
-                    <li><i class="fas fa-check-circle"></i> Интерактивные материалы, современные методики</li>
-                    <li><i class="fas fa-check-circle"></i> Более 120 довольных студентов за последние 3 года</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"/></svg> Подготовка к DELE, IELTS, ОГЭ/ЕГЭ</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"/></svg> Разговорный клуб, бизнес-английский</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"/></svg> Современные методики, интерактивные материалы</li>
+                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"/></svg> Более 130 довольных студентов</li>
                 </ul>
             </div>
-            <div class="about-photo">
-                <i class="fas fa-user-graduate"></i>
-                <p style="margin-top: 20px; font-weight: 500;">Мария Гарсия</p>
-                <p style="font-size: 14px; color: #4b5563;">Преподаватель, лингвист</p>
+            <div class="about-photo fade-up">
+                <svg viewBox="0 0 100 100" fill="none">
+                    <circle cx="50" cy="40" r="20" stroke="#334155" stroke-width="1.5" fill="#e2e8f0"/>
+                    <path d="M28 70 Q50 88 72 70" stroke="#334155" stroke-width="1.8" fill="none"/>
+                    <path d="M18 82 L82 82" stroke="#334155" stroke-width="1.2"/>
+                </svg>
+                <p style="margin-top: 24px; font-weight: 600; font-size: 20px;">Екатерина</p>
+                <p style="font-size: 15px; color: #4b5563;">Преподаватель, лингвист</p>
             </div>
         </div>
     </section>
 
-    <!-- Форматы занятий -->
-    <section id="formats" style="background: #fefefc;">
+    <section id="online" class="online-features">
         <div class="container">
-            <h2 class="section-title">Форматы обучения</h2>
-            <p class="section-subtitle">Выберите удобный режим занятий и интенсивность.</p>
-            <div class="formats-grid">
-                <div class="format-card">
-                    <i class="fas fa-laptop"></i>
-                    <h4>Онлайн</h4>
-                    <p>Zoom, Skype или Discord. Интерактивная доска, домашние задания в личном кабинете.</p>
+            <h2 class="section-title fade-up">Занятия только онлайн</h2>
+            <p class="section-subtitle fade-up">Удобно, эффективно, современно. Всё необходимое для комфортного изучения языка.</p>
+            <div class="online-grid">
+                <div class="online-card fade-up">
+                    <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor"/><path d="M8 12h8" stroke="currentColor"/></svg>
+                    <h4>Любая платформа</h4>
+                    <p>Zoom, Skype, Telegram. Выбирайте удобный сервис для занятий.</p>
                 </div>
-                <div class="format-card">
-                    <i class="fas fa-building"></i>
-                    <h4>Офлайн (Москва)</h4>
-                    <p>Встречи у преподавателя или выезд по городу. Индивидуальный график.</p>
-                </div>
-                <div class="format-card">
-                    <i class="fas fa-users"></i>
-                    <h4>В парах / мини-группа</h4>
-                    <p>Экономия без потери качества. Интенсивная практика диалогов.</p>
-                </div>
-                <div class="format-card">
-                    <i class="fas fa-calendar-week"></i>
-                    <h4>Экспресс-курсы</h4>
-                    <p>Интенсив к поездке или собеседованию. 2-4 недели плотной работы.</p>
+                <div class="online-card fade-up">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14" stroke="currentColor"/></svg>
+                    <h4>Запись уроков</h4>
+                    <p>Все занятия сохраняются для повторения материала.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Цены и пакеты -->
-    <section id="pricing">
+    <section id="reviews" class="reviews-section">
         <div class="container">
-            <h2 class="section-title">Стоимость занятий</h2>
-            <p class="section-subtitle">Прозрачные цены без скрытых доплат. Оплата за месяц или абонемент.</p>
-            <div class="pricing-grid">
-                <div class="pricing-item">
-                    <h3>Пробный урок</h3>
-                    <div class="price">Бесплатно</div>
-                    <p style="color:#475569;">30 минут знакомство, определение уровня, рекомендации.</p>
-                    <ul>
-                        <li><i class="fas fa-check" style="color:#2563eb;"></i> Тестирование знаний</li>
-                        <li><i class="fas fa-check" style="color:#2563eb;"></i> Постановка целей</li>
-                    </ul>
-                    <a href="#contact-form-block" class="btn-small">Записаться</a>
+            <h2 class="section-title fade-up">Отзывы учеников</h2>
+            <p class="section-subtitle fade-up">Реальные впечатления тех, кто уже занимается онлайн.</p>
+            
+            <div id="reviews-list" class="reviews-grid">
+                <div style="grid-column:1/-1; text-align:center; padding:40px; color:#94a3b8;">Пока нет отзывов. Оставьте первый!</div>
+            </div>
+
+            <div class="add-review-form fade-up">
+                <div class="form-title">Расскажите о вашем опыте</div>
+                <div class="review-input-group">
+                    <input type="text" id="review-name" placeholder="Ваше имя" maxlength="50">
                 </div>
-                <div class="pricing-item">
-                    <h3>Индивидуальный</h3>
-                    <div class="price">2 200 ₽ <small>/ 60 мин</small></div>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Индивидуальный план</li>
-                        <li><i class="fas fa-check"></i> Обратная связь 24/7</li>
-                        <li><i class="fas fa-check"></i> Гибкое расписание</li>
-                    </ul>
-                    <a href="#contact-form-block" class="btn-small">Выбрать</a>
+                <div class="review-input-group">
+                    <textarea id="review-text" placeholder="Поделитесь впечатлениями о занятиях..." rows="3" maxlength="500"></textarea>
                 </div>
-                <div class="pricing-item">
-                    <h3>Абонемент 8 занятий</h3>
-                    <div class="price">16 000 ₽ <small>/ месяц</small></div>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Экономия 1 600 ₽</li>
-                        <li><i class="fas fa-check"></i> Дополнительный онлайн-чат с поддержкой</li>
-                        <li><i class="fas fa-check"></i> Бесплатные материалы</li>
-                    </ul>
-                    <a href="#contact-form-block" class="btn-small">Купить абонемент</a>
-                </div>
+                <button class="btn-submit" id="submit-review">Оставить отзыв</button>
+                <p style="font-size: 13px; color: #64748b; margin-top: 20px;">Ваш отзыв будет опубликован сразу. Спасибо за обратную связь!</p>
             </div>
         </div>
     </section>
-
-    <!-- Блок CTA / форма записи -->
-    <div class="container" id="contact-form-block">
-        <div class="cta-section">
-            <div class="cta-grid">
-                <div class="cta-text">
-                    <h2>Начните говорить свободно</h2>
-                    <p>Оставьте заявку на бесплатную консультацию и пробный урок. Мы подберём график и программу.</p>
-                </div>
-                <div class="cta-form" id="contact">
-                    <form id="callback-form" action="#" method="post">
-                        <div class="form-group">
-                            <input type="text" placeholder="Ваше имя" id="name-input" required>
-                            <input type="tel" placeholder="Телефон или e-mail" id="contact-input" required>
-                        </div>
-                        <div class="form-group" style="margin-top: 16px;">
-                            <select id="lang-select">
-                                <option value="english">Английский язык</option>
-                                <option value="spanish">Испанский язык</option>
-                                <option value="both">Оба языка</option>
-                            </select>
-                            <button type="submit" id="submit-btn">Отправить заявку <i class="fas fa-paper-plane"></i></button>
-                        </div>
-                        <p style="font-size: 12px; margin-top: 16px; color: #cbd5e1;">Нажимая на кнопку, вы даёте согласие на обработку данных. Мы свяжемся с вами в течение часа.</p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 </main>
 
 <footer>
     <div class="container">
         <div class="footer-grid">
             <div class="footer-col">
-                <h4>LINGUA MENTOR</h4>
+                <h4>EKATERINA LINGUA</h4>
                 <p>Репетитор английского и испанского</p>
-                <p>Москва (м. Белорусская) + онлайн</p>
+                <p>Онлайн по всему миру</p>
             </div>
             <div class="footer-col">
                 <h4>Контакты</h4>
-                <a href="mailto:maria@linguamentor.ru">maria@linguamentor.ru</a>
+                <a href="mailto:ekaterina@lingua.ru">ekaterina@lingua.ru</a>
                 <a href="tel:+79161234567">+7 (916) 123-45-67</a>
-                <p>WhatsApp / Telegram</p>
+                <p>Telegram / WhatsApp</p>
             </div>
             <div class="footer-col">
                 <h4>Полезное</h4>
-                <a href="#">Блог о языках</a>
-                <a href="#">Пробный урок</a>
-                <a href="#">Материалы для учеников</a>
-            </div>
-            <div class="footer-col">
-                <h4>Соцсети</h4>
-                <a href="#">Instagram</a>
-                <a href="#">Telegram-канал</a>
-                <a href="#">YouTube</a>
+                <a href="#online">Онлайн-формат</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#about">О преподавателе</a>
             </div>
         </div>
         <div class="copyright">
-            <p>© 2026 Lingua Mentor — Репетитор по английскому и испанскому. Все права защищены.</p>
+            <p>© 2026 Ekaterina Lingua — Онлайн-репетитор по английскому и испанскому.</p>
         </div>
     </div>
 </footer>
 
 <script>
     (function() {
-        // Плавная прокрутка по якорям
         const links = document.querySelectorAll('a[href^="#"]');
         links.forEach(link => {
             link.addEventListener('click', function(e) {
@@ -776,42 +685,103 @@
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     e.preventDefault();
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
 
-        // Обработка формы заявки
-        const form = document.getElementById('callback-form');
-        if (form) {
-            form.addEventListener('submit', function(event) {
-                event.preventDefault();
-                const name = document.getElementById('name-input').value.trim();
-                const contact = document.getElementById('contact-input').value.trim();
-                const lang = document.getElementById('lang-select').value;
-                if (name && contact) {
-                    alert('Спасибо, ' + name + '! Мы свяжемся с вами для согласования пробного урока по ' + (lang === 'english' ? 'английскому' : lang === 'spanish' ? 'испанскому' : 'английскому и испанскому') + '.');
-                    form.reset();
-                } else {
-                    alert('Пожалуйста, заполните имя и контактные данные.');
+        let reviews = [];
+
+        function loadReviews() {
+            const stored = localStorage.getItem('ekaterina_reviews');
+            if (stored) {
+                try {
+                    reviews = JSON.parse(stored);
+                } catch(e) { reviews = []; }
+            }
+            renderReviews();
+        }
+
+        function saveReviews() {
+            localStorage.setItem('ekaterina_reviews', JSON.stringify(reviews));
+        }
+
+        function renderReviews() {
+            const container = document.getElementById('reviews-list');
+            if (!container) return;
+            if (reviews.length === 0) {
+                container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#94a3b8;">Пока нет отзывов. Оставьте первый!</div>';
+                return;
+            }
+            container.innerHTML = reviews.map(review => `
+                <div class="review-card">
+                    <div class="review-author">
+                        <span>${escapeHtml(review.name)}</span>
+                    </div>
+                    <div class="review-text">${escapeHtml(review.text)}</div>
+                    <div class="review-date">${review.date || ''}</div>
+                </div>
+            `).join('');
+        }
+
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str.replace(/[&<>]/g, function(m) {
+                if (m === '&') return '&amp;';
+                if (m === '<') return '&lt;';
+                if (m === '>') return '&gt;';
+                return m;
+            });
+        }
+
+        function addReview(name, text) {
+            if (!name.trim() || !text.trim()) {
+                alert('Пожалуйста, заполните имя и текст отзыва.');
+                return false;
+            }
+            if (name.length > 50) name = name.slice(0,50);
+            if (text.length > 500) text = text.slice(0,500);
+            const today = new Date().toISOString().slice(0,10);
+            reviews.unshift({ name: name.trim(), text: text.trim(), date: today });
+            saveReviews();
+            renderReviews();
+            return true;
+        }
+
+        const submitBtn = document.getElementById('submit-review');
+        if (submitBtn) {
+            submitBtn.addEventListener('click', function() {
+                const nameInput = document.getElementById('review-name');
+                const textInput = document.getElementById('review-text');
+                if (addReview(nameInput.value, textInput.value)) {
+                    nameInput.value = '';
+                    textInput.value = '';
+                    alert('Спасибо за отзыв!');
                 }
             });
         }
 
-        // небольшая подсветка активной секции в навигации
-        const sections = document.querySelectorAll('section, .hero, .cta-section');
+        loadReviews();
+
+        const fadeElements = document.querySelectorAll('.fade-up');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('appear');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -20px 0px' });
+        fadeElements.forEach(el => observer.observe(el));
+
+        const sections = document.querySelectorAll('section, .hero');
         const navItems = document.querySelectorAll('.nav-links a');
         window.addEventListener('scroll', () => {
             let current = '';
-            const scrollPos = window.scrollY + 150;
+            const scrollPos = window.scrollY + 200;
             sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.offsetHeight;
-                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-                    current = section.getAttribute('id');
+                if (section.id && scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+                    current = section.id;
                 }
             });
             navItems.forEach(link => {
