@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
-    <title>Екатерина | Английский и испанский онлайн</title>
-    <meta name="description" content="Онлайн-занятия по английскому и испанскому с Екатериной. Любой возраст и уровень. Индивидуальный подход, разговорная практика.">
+    <title>Катя | Репетитор английского и испанского онлайн</title>
+    <meta name="description" content="Онлайн-занятия по английскому и испанскому с Катей. Стаж почти 10 лет. Взрослые и дети. Разговорный язык, подготовка к экзаменам, помощь с программой.">
     <style>
         * {
             margin: 0;
@@ -89,7 +89,6 @@
             background: #f8fafc;
         }
 
-        /* навигация (адаптивная) */
         .navbar {
             padding: 16px 0;
             border-bottom: 1px solid #f0f2f5;
@@ -118,7 +117,6 @@
             color: transparent;
         }
 
-        /* бургер-меню для мобильных */
         .nav-toggle {
             display: none;
             background: none;
@@ -154,7 +152,6 @@
             color: #2563eb;
         }
 
-        /* hero */
         .hero {
             padding: 24px 0 56px 0;
         }
@@ -224,7 +221,6 @@
             stroke-width: 1.2;
         }
 
-        /* карточки преимуществ */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -260,7 +256,6 @@
             line-height: 1.5;
         }
 
-        /* о преподавателе */
         .about-grid {
             display: flex;
             flex-wrap: wrap;
@@ -321,7 +316,40 @@
             stroke: #334155;
         }
 
-        /* онлайн-формат (2 карточки) */
+        .directions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .direction-card {
+            background: #f9fafb;
+            border-radius: 28px;
+            padding: 28px 20px;
+            text-align: center;
+            border: 1px solid #edf2f7;
+        }
+
+        .direction-card svg {
+            width: 44px;
+            height: 44px;
+            stroke: #2563eb;
+            stroke-width: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .direction-card h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .direction-card p {
+            font-size: 14px;
+            color: #4b5563;
+        }
+
         .online-features {
             background: #fefefc;
         }
@@ -354,7 +382,6 @@
             margin-bottom: 14px;
         }
 
-        /* отзывы */
         .reviews-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -466,7 +493,6 @@
             color: #6c757d;
         }
 
-        /* ===== АДАПТАЦИЯ ПОД ТЕЛЕФОНЫ ===== */
         @media (max-width: 768px) {
             .container {
                 padding: 0 20px;
@@ -479,9 +505,6 @@
             }
             .hero-title {
                 font-size: 36px;
-            }
-            .hero-badge {
-                font-size: 12px;
             }
             .btn {
                 padding: 12px 22px;
@@ -496,8 +519,6 @@
             .btn-group .btn {
                 width: 100%;
             }
-
-            /* бургер-меню */
             .nav-toggle {
                 display: block;
             }
@@ -515,14 +536,12 @@
             .nav-links a {
                 font-size: 18px;
                 padding: 8px 0;
-                width: 100%;
                 text-align: center;
             }
             .nav-container {
                 flex-direction: row;
                 flex-wrap: wrap;
             }
-            /* hero блок столбиком */
             .hero-grid {
                 flex-direction: column;
                 text-align: center;
@@ -536,16 +555,7 @@
             }
             .hero-image {
                 order: -1;
-                margin-bottom: 10px;
             }
-            /* карточки преимуществ */
-            .features-grid {
-                gap: 24px;
-            }
-            .feature-card {
-                padding: 28px 20px;
-            }
-            /* about */
             .about-grid {
                 flex-direction: column;
                 text-align: center;
@@ -557,11 +567,9 @@
                 order: -1;
                 width: 100%;
             }
-            /* онлайн-формат */
-            .online-grid {
-                gap: 24px;
+            .directions-grid {
+                gap: 20px;
             }
-            /* отзывы */
             .reviews-grid {
                 grid-template-columns: 1fr;
             }
@@ -569,24 +577,17 @@
                 padding: 30px 20px;
             }
             .form-title {
-                font-size: 22px;
                 text-align: center;
             }
             .btn-submit {
                 width: 100%;
             }
-            /* футер */
             .footer-grid {
                 grid-template-columns: 1fr;
                 text-align: center;
-                gap: 32px;
-            }
-            .footer-col h4 {
-                margin-bottom: 16px;
             }
         }
 
-        /* планшеты */
         @media (min-width: 769px) and (max-width: 1024px) {
             .container {
                 padding: 0 32px;
@@ -594,12 +595,8 @@
             .hero-title {
                 font-size: 48px;
             }
-            .hero-grid {
-                gap: 40px;
-            }
         }
 
-        /* анимация появления */
         .fade-up {
             opacity: 0;
             transform: translateY(20px);
@@ -615,13 +612,14 @@
 
 <header class="navbar">
     <div class="container nav-container">
-        <a href="#" class="logo">EKATERINA LINGUA</a>
+        <a href="#" class="logo">KATYA LINGUA</a>
         <button class="nav-toggle" id="navToggle" aria-label="Меню">
             <span></span><span></span><span></span>
         </button>
         <div class="nav-links" id="navLinks">
-            <a href="#about">О преподавателе</a>
-            <a href="#online">Онлайн-формат</a>
+            <a href="#about">Обо мне</a>
+            <a href="#directions">Направления</a>
+            <a href="#online">Формат</a>
             <a href="#reviews">Отзывы</a>
         </div>
     </div>
@@ -631,12 +629,12 @@
     <section class="hero">
         <div class="container hero-grid">
             <div class="hero-content fade-up">
-                <span class="hero-badge">Онлайн-занятия</span>
-                <h1 class="hero-title">Английский и испанский с репетитором</h1>
-                <p class="hero-desc">Индивидуальные уроки онлайн. Любой возраст и уровень подготовки. Заговорите свободно с комфортом.</p>
+                <span class="hero-badge">Онлайн-репетитор</span>
+                <h1 class="hero-title">Английский и испанский с Катей</h1>
+                <p class="hero-desc">Помогаю уверенно заговорить на иностранном языке. Стаж почти 10 лет. Взрослые и дети любого возраста.</p>
                 <div class="btn-group">
                     <a href="#reviews" class="btn btn-primary">Оставить отзыв</a>
-                    <a href="#online" class="btn btn-outline">Узнать о формате</a>
+                    <a href="#directions" class="btn btn-outline">Направления</a>
                 </div>
             </div>
             <div class="hero-image fade-up">
@@ -653,18 +651,18 @@
         <div class="features-grid">
             <div class="feature-card fade-up">
                 <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4" stroke="currentColor"/></svg></div>
-                <h3>Любой возраст</h3>
-                <p>Дети, школьники, взрослые — программа под ваши задачи и интересы.</p>
+                <h3>Почти 10 лет опыта</h3>
+                <p>Работаю по современным коммуникативным методикам, использую аутентичные материалы и создаю свой контент.</p>
             </div>
             <div class="feature-card fade-up">
                 <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor"/></svg></div>
-                <h3>Любой уровень</h3>
-                <p>С нуля, продолжающий, продвинутый — от A1 до C1.</p>
+                <h3>Любой возраст</h3>
+                <p>Работаю со взрослыми и с детьми всех возрастов. Индивидуальный подход к каждому.</p>
             </div>
             <div class="feature-card fade-up">
                 <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9" stroke="currentColor"/></svg></div>
                 <h3>Онлайн по всему миру</h3>
-                <p>Занимайтесь из любой точки. Удобная платформа.</p>
+                <p>Занимайтесь из любой точки. Удобная платформа на ваш выбор.</p>
             </div>
         </div>
     </div>
@@ -672,40 +670,64 @@
     <section id="about">
         <div class="container about-grid">
             <div class="about-text fade-up">
-                <h3>Екатерина</h3>
-                <p>Дипломированный лингвист-преподаватель (МГЛУ), стажировка в университете Саламанки. Помогаю ученикам любого возраста заговорить уверенно.</p>
-                <ul class="about-list">
-                    <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Подготовка к DELE, IELTS, ОГЭ/ЕГЭ</li>
-                    <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Разговорный клуб, бизнес-английский</li>
-                    <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Современные методики, интерактивные материалы</li>
-                    <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/></svg> Более 130 довольных студентов</li>
-                </ul>
+                <h3>Привет, я Катя</h3>
+                <p>Моя цель — помочь вам уверенно заговорить на иностранном языке. Вот уже почти 10 лет мы с моими учениками учимся понимать речь на слух, читать, писать и, конечно же, общаться.</p>
+                <p>Я работаю по современным коммуникативным методикам, использую аутентичные учебные материалы и пишу свой контент. Буду рада стать вашим репетитором.</p>
             </div>
             <div class="about-photo fade-up">
                 <svg viewBox="0 0 100 100" fill="none">
                     <circle cx="50" cy="40" r="20" stroke="#334155" stroke-width="1.5" fill="#e2e8f0"/>
                     <path d="M28 70 Q50 88 72 70" stroke="#334155" stroke-width="1.8" fill="none"/>
                 </svg>
-                <p style="margin-top: 20px; font-weight: 600; font-size: 18px;">Екатерина</p>
-                <p style="font-size: 14px; color: #4b5563;">Преподаватель, лингвист</p>
+                <p style="margin-top: 20px; font-weight: 600; font-size: 18px;">Катя</p>
+                <p style="font-size: 14px; color: #4b5563;">Репетитор английского и испанского</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="directions">
+        <div class="container">
+            <h2 class="section-title fade-up">Направления моей работы</h2>
+            <p class="section-subtitle fade-up">Помогу в освоении языка для любых целей</p>
+            <div class="directions-grid">
+                <div class="direction-card fade-up">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M12 8v8m-4-4h8" stroke="currentColor"/><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor"/></svg>
+                    <h4>Разговорный</h4>
+                    <p>Английский и испанский для свободного общения</p>
+                </div>
+                <div class="direction-card fade-up">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z" stroke="currentColor"/><path d="M8 8h8M8 12h6" stroke="currentColor"/></svg>
+                    <h4>Школьная программа</h4>
+                    <p>Помощь в освоении школьной и университетской программы</p>
+                </div>
+                <div class="direction-card fade-up">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4" stroke="currentColor"/></svg>
+                    <h4>Олимпиады и экзамены</h4>
+                    <p>Подготовка к олимпиадам, ОГЭ, ЕГЭ</p>
+                </div>
+                <div class="direction-card fade-up">
+                    <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor"/><path d="M12 6v6l4 2" stroke="currentColor"/></svg>
+                    <h4>Международные экзамены</h4>
+                    <p>Подготовка к DELE, IELTS и другим сертификациям</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="online" class="online-features">
         <div class="container">
-            <h2 class="section-title fade-up">Занятия только онлайн</h2>
-            <p class="section-subtitle fade-up">Удобно, эффективно, современно. Всё необходимое для комфортного изучения языка.</p>
+            <h2 class="section-title fade-up">Формат работы</h2>
+            <p class="section-subtitle fade-up">Только онлайн — удобно, эффективно, современно</p>
             <div class="online-grid">
                 <div class="online-card fade-up">
                     <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor"/><path d="M8 12h8" stroke="currentColor"/></svg>
                     <h4>Любая платформа</h4>
-                    <p>Zoom, Skype, Telegram. Выбирайте удобный сервис.</p>
+                    <p>Zoom, Skype, Telegram — выбирайте удобный сервис</p>
                 </div>
                 <div class="online-card fade-up">
                     <svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14" stroke="currentColor"/></svg>
                     <h4>Запись уроков</h4>
-                    <p>Все занятия сохраняются для повторения.</p>
+                    <p>Все занятия сохраняются для повторения материала</p>
                 </div>
             </div>
         </div>
@@ -714,7 +736,7 @@
     <section id="reviews" class="reviews-section">
         <div class="container">
             <h2 class="section-title fade-up">Отзывы учеников</h2>
-            <p class="section-subtitle fade-up">Реальные впечатления тех, кто уже занимается онлайн.</p>
+            <p class="section-subtitle fade-up">Реальные впечатления тех, кто уже занимается онлайн</p>
             <div id="reviews-list" class="reviews-grid">
                 <div style="grid-column:1/-1; text-align:center; padding:30px; color:#94a3b8;">Пока нет отзывов. Оставьте первый!</div>
             </div>
@@ -737,39 +759,38 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-col">
-                <h4>EKATERINA LINGUA</h4>
+                <h4>KATYA LINGUA</h4>
                 <p>Репетитор английского и испанского</p>
                 <p>Онлайн по всему миру</p>
             </div>
             <div class="footer-col">
                 <h4>Контакты</h4>
-                <a href="mailto:ekaterina@lingua.ru">ekaterina@lingua.ru</a>
+                <a href="mailto:katya@lingua.ru">katya@lingua.ru</a>
                 <a href="tel:+79161234567">+7 (916) 123-45-67</a>
                 <p>Telegram / WhatsApp</p>
             </div>
             <div class="footer-col">
-                <h4>Полезное</h4>
-                <a href="#online">Онлайн-формат</a>
+                <h4>Навигация</h4>
+                <a href="#about">Обо мне</a>
+                <a href="#directions">Направления</a>
+                <a href="#online">Формат</a>
                 <a href="#reviews">Отзывы</a>
-                <a href="#about">О преподавателе</a>
             </div>
         </div>
         <div class="copyright">
-            <p>© 2026 Ekaterina Lingua — Онлайн-репетитор по английскому и испанскому.</p>
+            <p>© 2026 Катя — онлайн-репетитор по английскому и испанскому.</p>
         </div>
     </div>
 </footer>
 
 <script>
     (function() {
-        // бургер-меню
         const toggle = document.getElementById('navToggle');
         const navLinks = document.getElementById('navLinks');
         if (toggle && navLinks) {
             toggle.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
             });
-            // закрываем при клике на ссылку
             navLinks.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     navLinks.classList.remove('active');
@@ -777,7 +798,6 @@
             });
         }
 
-        // плавная прокрутка
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const targetId = this.getAttribute('href');
@@ -790,16 +810,15 @@
             });
         });
 
-        // отзывы (localStorage)
         let reviews = [];
         function loadReviews() {
-            const stored = localStorage.getItem('ekaterina_reviews');
+            const stored = localStorage.getItem('katya_reviews');
             if (stored) {
                 try { reviews = JSON.parse(stored); } catch(e) { reviews = []; }
             }
             renderReviews();
         }
-        function saveReviews() { localStorage.setItem('ekaterina_reviews', JSON.stringify(reviews)); }
+        function saveReviews() { localStorage.setItem('katya_reviews', JSON.stringify(reviews)); }
         function escapeHtml(str) {
             if (!str) return '';
             return str.replace(/[&<>]/g, function(m) {
@@ -833,18 +852,20 @@
             renderReviews();
             return true;
         }
-        document.getElementById('submit-review')?.addEventListener('click', () => {
-            const name = document.getElementById('review-name').value;
-            const text = document.getElementById('review-text').value;
-            if (addReview(name, text)) {
-                document.getElementById('review-name').value = '';
-                document.getElementById('review-text').value = '';
-                alert('Спасибо за отзыв!');
-            }
-        });
+        const submitBtn = document.getElementById('submit-review');
+        if (submitBtn) {
+            submitBtn.addEventListener('click', () => {
+                const name = document.getElementById('review-name').value;
+                const text = document.getElementById('review-text').value;
+                if (addReview(name, text)) {
+                    document.getElementById('review-name').value = '';
+                    document.getElementById('review-text').value = '';
+                    alert('Спасибо за отзыв!');
+                }
+            });
+        }
         loadReviews();
 
-        // анимация при скролле
         const faders = document.querySelectorAll('.fade-up');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('appear'); observer.unobserve(e.target); } });
